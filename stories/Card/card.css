@@ -1,0 +1,107 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background: #f6f4f1;
+    border-radius: 15px;
+    max-width: 424px;
+}
+.image {
+    position: relative;
+}
+.date {
+    position: absolute;
+    left: -5px;
+    top: 20px;
+    /* font-family: Cardo; */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    background: #f6f4f1;
+}
+.date::after {
+    content: "";
+    background-image: url('data:image/svg+xml,<svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.43333 5.99994L0.5 0.244385H5.43333V5.99994Z" fill="%23CE143D"/></svg>');
+    position: absolute;
+    width: 5px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+.content {
+    padding-top: 25px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 298px;
+    display: flex;
+    flex-direction: column;
+}
+.heading {
+    margin-bottom: 10px;
+    /* font-family: Red Hat Display; */
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    flex: 0;
+}
+.location {
+    margin-bottom: 15px;
+    /* font-family: Red Hat Text; */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    flex: 0;
+    display: flex;
+    align-items: center;
+    color: #8e8583;
+}
+.location .inner {
+    display: flex;
+    align-items: center;
+}
+.location .inner::before {
+    content: "";
+    background-image: url('data:image/svg+xml,<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_3292_30927)"><path d="M14.7356 26.1579C14.7356 26.1579 -4.07879 4.54487 13.717 2.39179C31.5129 0.237587 14.7356 26.1579 14.7356 26.1579Z" stroke="black" stroke-width="1.18359" stroke-miterlimit="10"/><path d="M13.5778 6.38698C16.4069 6.1132 17.538 8.1998 17.7645 9.67912C18.2129 12.613 16.0452 13.9368 13.8775 14.0123C11.7097 14.0867 10.1392 12.4631 10.1392 10.1985C10.1392 8.62906 11.2602 6.61119 13.5778 6.38698Z" stroke="black" stroke-width="1.18359" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_3292_30927"><rect width="17.5172" height="26.0391" fill="white" transform="translate(5.13916 1.34033)"/></clipPath></defs></svg>');
+    width: 28.41px;
+    height: 28.41px;
+    display: block;
+    margin-left: -5px;
+}
+.pricing {
+    flex: 0;
+    display: flex;
+}
+.pricing .price {
+    /* font-family: Red Hat Display; */
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #999999;
+    margin-right: 9px;
+    text-decoration: line-through;
+}
+.pricing .salePrice {
+    /* font-family: Red Hat Display; */
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #cc0035;
+}
+.buttons {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+.buttons button {
+    margin-right: 15px;
+}
+.buttons button:last-child {
+    margin-right: 0;
+}
